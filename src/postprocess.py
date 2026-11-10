@@ -7,8 +7,8 @@
 """
 import io, re, os
 
-BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "output")
-P = os.path.join(BASE, "营销活动用户行为路径分析_脱敏版.html")
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+P = os.path.join(BASE, "营销活动用户行为路径分析.html")
 s = io.open(P, encoding="utf-8").read()
 
 # 校验：data 属性中不应再出现纯数字页面 ID

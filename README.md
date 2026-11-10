@@ -24,27 +24,27 @@
 
 ```
 ├── README.md
+├── index.html                # GitHub Pages 首页，跳转到报告
+├── 营销活动用户行为路径分析.html  # 最终报告
 ├── requirements.txt          # 无第三方依赖（仅 Python 标准库）
 ├── data/
 │   └── report_data.json      # 已脱敏 + 模拟化的分析数据
-├── src/
-│   ├── prep.py               # 从源日志构建分析数据（口径、特征、桑基图数据）
-│   ├── charts.py             # 图表生成（漏斗、到达率、触达、分解、散点、日/时）
-│   ├── sankey.py             # 桑基图生成（几何、配色、标签、路径算法）
-│   ├── render.py             # 报告组装（布局、样式、交互脚本、文案）
-│   ├── desensitize_data.py   # 商品名/编号脱敏
-│   ├── simulate_data.py      # 统计量扰动生成模拟数据（固定种子可复现）
-│   ├── postprocess.py        # HTML 后处理（页面 ID 匿名化）
-│   └── refine.py             # 文案与日期清理
-└── output/
-    └── 营销活动用户行为路径分析_脱敏版.html   # 最终报告
+└── src/
+    ├── prep.py               # 从源日志构建分析数据（口径、特征、桑基图数据）
+    ├── charts.py             # 图表生成（漏斗、到达率、触达、分解、散点、日/时）
+    ├── sankey.py             # 桑基图生成（几何、配色、标签、路径算法）
+    ├── render.py             # 报告组装（布局、样式、交互脚本、文案）
+    ├── desensitize_data.py   # 商品名/编号脱敏
+    ├── simulate_data.py      # 统计量扰动生成模拟数据（固定种子可复现）
+    ├── postprocess.py        # HTML 后处理（页面 ID 匿名化）
+    └── refine.py             # 文案与日期清理
 ```
 
 ## 使用
 
 ### 直接查看报告
 
-用浏览器打开 `output/营销活动用户行为路径分析_脱敏版.html` 即可，无需任何服务。
+用浏览器打开仓库根目录的 `营销活动用户行为路径分析.html` 即可，无需任何服务。GitHub Pages 首页会跳转到这份报告。
 
 ### 重新生成报告
 

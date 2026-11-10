@@ -6,9 +6,9 @@ from charts import (M, n, pc, pp, esc, fig, chart_funnel, chart_radar, sankey_sv
                     chart_hours, gname, glabel,
                     C_ORDER, C_NON, ACCENT, BLUE, CLAY, INK, MUTED)
 
-# 项目根目录（src/ 的上一级），输出到 output/
+# 项目根目录（src/ 的上一级），报告输出到仓库根目录
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(BASE, "output", "营销活动用户行为路径分析_脱敏版.html")
+OUT = os.path.join(BASE, "营销活动用户行为路径分析.html")
 
 kg = M["kitagawa"]
 arr = M["arrival"]
