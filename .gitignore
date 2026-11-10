@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 数据与临时文件（真实源数据不入库）
+*.xlsx
+*.pkl
+_work/
+debug.log
+
+# 系统
+.DS_Store
+Thumbs.db
+
+data/_alias_map.json
+data/raw/
